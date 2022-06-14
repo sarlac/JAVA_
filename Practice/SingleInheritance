@@ -1,0 +1,25 @@
+package practice;
+
+class Vehicle							//parent class
+{
+	protected String brand="Ford";		//attribute
+	public void horn()					//method
+	{
+		System.out.println("Tuut, tuut!");
+	}
+}
+
+ class Car extends  Vehicle		// inherited child class
+ {
+	private String ModelName="Mustang";
+	
+	public static void main(String[] args) 
+	{
+		//creating object of class car
+		Car Cr=new Car();
+		
+		Cr.horn();
+		
+		System.out.println(Cr.brand+"  "+Cr.ModelName);
+	}
+}
